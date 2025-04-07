@@ -16,6 +16,7 @@
       <material name="grey"/>
     </visual>
   </link>
+
   <!-- Złącze 1:Obrót bazy -->
   <joint name="base_to_link1" type="revolute">
     <parent link="base_link"/>
