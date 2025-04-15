@@ -25,6 +25,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': 
-        ['forward_kinematics = my_robot_rviz.forward_kinematics:main'],
+        ['forward_kinematics = my_robot_rviz.forward_kinematics:main',
+         'inverse_kinematics = my_robot_rviz.inverse_kinematics:main'],
     },
 )

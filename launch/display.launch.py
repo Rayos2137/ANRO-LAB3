@@ -26,13 +26,21 @@ def generate_launch_description():
     robot_description = Command(['xacro',' ', urdf_file])
 
     return LaunchDescription([
-
+    
     Node(
-                package='my_robot_rviz',
-                executable='forward_kinematics',
-                name='forward_kinematics',
-                output='screen'
+            package='my_robot_rviz',
+            executable='inverse_kinematics',
+            name='inverse_kinematics',
+            output='screen'
     ),
+
+    #    Node(
+    #            package='my_robot_rviz',
+    #            executable='forward_kinematics',
+    #            name='forward_kinematics',
+    #            output='screen'
+    #    ),
+    
     Node(
             package='joint_state_publisher_gui',
             executable='joint_state_publisher_gui',
